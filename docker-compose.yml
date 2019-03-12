@@ -16,8 +16,8 @@ services:
       - "80:80/tcp"
       - "443:443/tcp"
     volumes:
-      - /home/pi/docker/pihole/pihole/:/etc/pihole/
-      - /home/pi/docker/pihole/dnsmasq.d/:/etc/dnsmasq.d/
+      - /home/pi/docker/data/pihole/pihole/:/etc/pihole/
+      - /home/pi/docker/data/pihole/dnsmasq.d/:/etc/dnsmasq.d/
     environment:
       ServerIP:
       WEBPASSWORD:
